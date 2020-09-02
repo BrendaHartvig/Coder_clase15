@@ -1,0 +1,27 @@
+@mixin sizes ($width, $height){
+	height: $height; width: $width;
+}
+
+.imagenQuienesSomos {
+	@include sizes (400px, 250px);
+	padding: 20px;
+}
+
+$imagen: equipo;
+
+div {
+	.imagenQuienesSomos{
+	@if $imagen == equipo {
+	background-color: green;
+	} @else if $imagen == expo {
+	background-color: blue;
+	} @else {
+	background-color: yellow;
+}
+
+@each $valor in trabajo, responsabilidad {
+   .#{$valor}-icon { 
+         Background-image:  
+          url('/multimedia/#{$valor}.png');
+    }
+} 

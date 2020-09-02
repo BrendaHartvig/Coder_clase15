@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,400;1,600&family=Corben:wght@700&display=swap');
+
+body {
+	background-image: radial-gradient(#daffc4, #c9ffed);
+	background-repeat: no-repeat;
+} 
+
+td, th {
+	font-family: Open Sans;
+	padding: 2%;
+}
+
+li {
+	font-family: Open Sans;
+	color: #179650;
+	line-height: 1.6;
+}
+
+img {
+	max-width: 450px;
+	max-height: 300px;
+}
+
+video {
+	width: 600px;
+	margin: 30px 400px 30px 400px;
+	padding: 10px 10px 10px 10px;
+}
+
+h2, ul {
+	color: #179650;
+}
+
+p {
+	font-family: Open Sans;
+	color: #179650;
+}
+
+label, div, legend {
+	font-family: Open Sans;
+
+}
+
+
+.container-fluid {
+	padding: 5% 20% 5% 20%;
+}
+
+.notas {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-around;
+	align-items: flex-start;
+}
+
+.notas__articulo {
+	padding: 25px;
+	border: solid green 0.5px;
+}
+
+.notas__articulo__titulo {
+	color: #179650;
+	font-size: 30px;
+}
+
+.notas__articulo__titulo--uppercase {
+	text-transform: uppercase;
+}
+
+#logo img {
+	width: 200px; 
+}
+
+#logo {
+	text-align: center;
+	margin: 20px; 
+}
+
+#h1Nombre {
+	font-family: Corben;
+	text-align: center;
+	font-size: 40px;
+	color: green;
+	padding: 20px;
+	margin: 20px;
+}
+
+#menu {
+	font-family: Open Sans;
+	text-align: center;
+	font-weight: 600;
+	font-size: 20;
+	background: #57ff6d
+}
+
+div#imgVegetales img {
+	grid-area: imgVegetales;
+}
+
+div#imgFrutas img {
+	grid-area: imgFrutas;
+}
+
+div#imgBarras img {
+	grid-area: imgBarras;
+}
+
+div#imgConservas img {
+	grid-area: imgConservas;
+}
+
+div#imgLicores img {
+	grid-area: imgLicores;
+}
+
+div#imgSemillas img {
+	grid-area: imgSemillas;
+}
+
+#grillaProductos {
+	display: grid;
+	grid-template-areas: 
+		"imgVegetales imgSemillas" 
+		"imgBarras imgConservas" 
+		"imgLicores imgFrutas";
+	grid-template-rows: 1fr 1fr 1fr;
+	grid-template-columns: 1fr 1fr;
+	grid-column-gap: 5px;
+	grid-row-gap: 20px;
+	justify-items: center;
+	align-items: center;
+	justify-content: start;
+	align-content: start;
+}

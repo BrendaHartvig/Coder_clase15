@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en"> 
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name= "descrition" content="Formulario para estar en contacto y suscribirte al newsletter.">
+		<meta name="keywords" content="orgánica, comida, higiene, natural, economía solidaria, soberanía alimenticia, Ecuador">
+		<meta name= "author" content="Brenda Hartvig">
+		<title>Contacto</title>
+		<link rel="icon" type="image/x-icon" href="multimedia/logo2.png">
+		<link rel="stylesheet" href="css/bootstrap/css/bootstrap.min.css"> 
+		<link rel="stylesheet" href="css/estilos.css">
+		<link rel="stylesheet" href="css/prueba.css">
+	</head>
+
+	<body>
+		<header>
+			<div id="logo"><img src="multimedia/logo2.png" alt="Logo"></div>
+			<h1 id="h1Nombre">Red de biotiendas de Ecuador</h1>
+			<br>
+			<nav id="menu">				
+				<a href="index.html">Inicio</a>
+				<a href="quienes-somos.html">Quiénes somos</a>
+				<a href="tiendas.html">Tiendas</a>
+				<a href="blog.html">Blog</a>
+				<a href="productos.html">Productos</a>
+				<a href="contacto.html">Contacto</a>
+			</nav>
+		</header>
+		<section>
+			<form class="form-row container-fluid" action="envio.php" method="post" enctype="">
+					<legend>Contacto</legend>
+						<div class="form-group col-md-6">
+							<label for="nombre">Nombre</label>
+							<input type="text" class="form-control" name="nombre">
+						</div>
+						<div class="form-group col-md-6">
+							<label for="apellido">Apellido</label>
+							<input type="text" class="form-control" name="apellido">
+						</div>
+						<div class="form-group col-md-6">
+							<label for="email">E-mail</label>
+							<input type="email" class="form-control" name="email"><br><br>
+						</div>
+						<div class="form-group col-md-6">
+							<label for="Ciudad">Ciudad</label>
+							<select class="form-control" name="Ciudad" id="">
+								<option value="1">San Mateo de las Esmeraldas</option>
+								<option value="2">Santa Elena</option>
+								<option value="3">San Pablo de Manta</option>
+								<option value="4">San Pedro de Alausí</option>
+								<option value="5">San Pedro de Riobamba</option>
+								<option value="6">San Vicente Mártir de Latacunga</option>
+								<option value="7">San Francisco de Quito</option>
+								<option value="8">San Luis de Otavalo</option>
+								<option value="9">Villa Nueva de San Gregorio de Portoviejo	</option>
+								<option value="10">Santiago de Guayaquil</option>
+							</select> 
+						</div>
+						<div class="form-group col-md-12">
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" name="newsletter" value="1" id="gridCheck">
+								<label class="form-check-label" for="gridCheck">
+							        Quiero estar informado
+							     </label>
+							</div>
+						</div>
+						<div class="form-group col-md-12">
+							<label class="form-check-label" for="comentarios">Comentarios</label><br>
+							<textarea class="form-control" name="comentarios" id="" cols="20" rows="5" placeholder="Nos importa su opinión"></textarea> 
+						</div>
+						<div>
+						<button type="reset" class="btn btn-info">Limpiar</button>
+						<button type="submit" class="btn btn-info">Enviar</button>
+						</div>
+				
+			</form>
+			</section>
+		<footer>
+		Desarrollado por Brenda Hartvig
+		</footer>
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+		<script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+	</body>
+</html>

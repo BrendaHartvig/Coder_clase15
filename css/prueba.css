@@ -1,0 +1,7 @@
+.imagenQuienesSomos {
+  height: 250px;
+  width: 400px;
+  padding: 20px; }
+
+div .imagenQuienesSomos {
+  background-color: green; }
